@@ -20,9 +20,9 @@ app.use(
 
 app.use(express.json());
 
-app.use("/api/posts", postRouter);
-app.use("/api/auth", authRouter);
-app.use("/api/contact", contactRouter);
+app.use("/posts", postRouter);
+app.use("/auth", authRouter);
+app.use("/contact", contactRouter);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
